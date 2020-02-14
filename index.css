@@ -1,0 +1,433 @@
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-width: 800px;
+}
+
+p {
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+#intro-img {
+    /*margin-top: 50px;*/
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    max-width: 800px;
+    width: 100%;
+}
+
+#banner {
+    position: static;
+    width: 800px;
+    left: 320px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#banner-img {
+    text-align: center;
+}
+
+#banner-text {
+    font-size: 24;
+    margin-top: 50px;
+    padding: 40px 60px;
+    background-color: #ecce6d;
+    border-radius: 25px;
+}
+
+#instructions-div {
+    text-align: center;
+}
+#instructions {
+    width: 60%;
+}
+
+#start-button-div {
+    padding: 20px;
+    width: 800px;
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#start-button {
+    cursor: pointer;
+    width: 200px;
+}
+
+#gameboy-frozen-div {
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    position: static;
+    min-width: 800px;
+    margin: 0 auto;
+}
+#gameboy-frozen {
+    width: 340px;
+    height: 570px;
+    margin: 40px auto;
+    z-index: 2;
+}
+#gameboy-screen {
+    position: relative;
+    z-index: 3;
+    background: red;
+}
+
+#gameboy-screen-text {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding-top: 65px;
+}
+
+#play-screen {
+    background-color: #97e77e;
+    animation: createBox 1s;
+    width: 800px;
+    height: 610px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#connie-summary {
+    min-width: 1200px;
+}
+
+#connie-summary .banner_wrapper {
+    margin: 0 auto;
+    width: 80%;
+    text-align:center;
+    margin-bottom: 80px;
+}
+
+#connie-summary .banner_pic {
+    min-width: 400px;
+    width: 60%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#connie-summary #banner_text {
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#connie-summary .highlight_wrapper {
+    margin: 0 auto;
+    width: 80%;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#connie-summary .highlight_pic {
+    min-width: 300px;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#connie-summary .highlight_text {
+    width: 50%;
+    display: table-cell;
+    padding-top: 3%
+}
+
+#connie-summary .timeline_wrapper {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#connie-summary .timeline_block {
+    min-width: 250px;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#connie-summary .contact_wrapper {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+#connie-summary .work_wrapper {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+#connie-summary h1 {
+    font-family: "Avenir", sans-serif;
+    color: "black";
+    text-align: center;
+}
+
+#connie-summary h1.nopad {
+    display: inline-block;
+}
+
+#connie-summary h2 {
+    font-family: "Gelasio", serif;
+    color: "black";
+    text-align: center;
+}
+
+#connie-summary h2.left {
+    font-family: "", serif;
+    color: "black";
+    text-align: left;
+}
+
+#connie-summary h3 {
+    font-family: "Avenir", sans-serif !important;
+    color: "black";
+    text-align: center;
+    font-size: 150%;
+}
+
+#connie-summary p {
+    font-family: "Avenir", sans-serif !important;
+    color: "black";
+    text-align: left;
+}
+
+#connie-summary a {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: color 0.5s ease;
+}
+
+#connie-summary a:hover {
+    color: #3F005F;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#play-inner-screen {
+    background-color: black;
+    height: 550px;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#play-inner-screen-2 {
+    background-color: #FFFFFF;
+    height: 450px;
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+}
+
+/*#mushroom-message {
+    width: 400px;
+    position: absolute;
+    top: 350px;
+    border-radius: 10px;
+    left: 520px;
+    background: brown;
+    z-index: 10;
+    padding: 20px;
+    padding-bottom: 0px !important;
+}
+
+#mushroom-message p {
+    color: white;
+    font-size: 8px;
+}*/
+
+.game-message {
+    width: 450px;
+    position: absolute;
+    top: 350px;
+    border-radius: 10px;
+    left: 520px;
+    background: brown;
+    z-index: 10;
+    padding: 20px;
+    padding-bottom: 0px !important;
+}
+
+.game-message p {
+    color: white;
+    font-size: 8px;
+}
+
+#gameboy-light {
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    left: 10%;
+    z-index: 5;
+}
+
+#gameboy-arrows {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    left: 13%;
+    z-index: 5;
+}
+
+#instruct-problem {
+    position: absolute;
+    width: 100px;
+    top: 0%;
+    left: -20%;
+    cursor: pointer;
+}
+
+#instruct-arrows {
+    position: absolute;
+    width: 100px;
+    top: 20%;
+    left: -20%;
+}
+
+#instruct-space {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: -23%;
+}
+
+#instruct-question {
+    position: absolute;
+    width: 100px;
+    top: 70%;
+    left: -20%;
+}
+
+#character {
+    position: absolute;
+    width: 100px;
+    top: 70%;
+    left: -20%;
+    height: 100px;
+    display: none;
+}
+
+#character-celebrate {
+    position: absolute;
+    width: 100px;
+    top: 70%;
+    left: -20%;
+    height: 100px;
+    display: none;
+}
+
+#character-text {
+    position: absolute;
+    width: 60%;
+    top: 56%;
+    left: 20%;
+    right: 20%;
+    text-align:left;
+    padding: 20px;
+}
+
+#character-text p {
+    font-size: 12px;
+}
+
+#end-text {
+    position: absolute;
+    width: 60%;
+    top: 62%;
+    left: 20%;
+    right: 20%;
+    text-align:left;
+    padding: 20px;
+}
+
+#end-text p {
+    font-size: 12px;
+}
+
+#logo-div {
+    position: relative;
+    top: 40%;
+}
+
+#gameboy-logo {
+    width: 2em;
+}
+
+.ml10 {
+    position: relative;
+    /*font-weight: 900;
+    /*font-size: 4em;*/
+    padding: 10px;
+    /*color: white;*/
+    background: brown;
+}
+
+.ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
+
+.ml102 {
+    position: relative;
+    /*font-weight: 900;*/
+    /*font-size: 4em;*/
+    padding: 10px;
+    color: white;
+    background: brown;
+}
+
+.ml102 .text-wrapper2 {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml102 .letter2 {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+}
