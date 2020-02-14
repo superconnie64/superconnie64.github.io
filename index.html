@@ -423,7 +423,9 @@
         started = false;
         startedMario = true;
         $( '#play-screen' ).show();
-        startGame();
+        setTimeout(function() {
+          startGame();
+        }, 1000);
       } else if (startedMario) {
         window.finishMario = false;
         $('#character').hide();
@@ -478,10 +480,11 @@
   var myGameArea = {
       canvas : document.createElement("canvas"),
       start : function() {
+        var screen_offset = $('#play-inner-screen-2').offset();
         this.canvas.width = 520;
         this.canvas.height = 500;
-        this.canvas.style.left = '450px';
-        this.canvas.style.top = '20px';
+        this.canvas.style.left = screen_offset.left - 10;
+        this.canvas.style.top = screen_offset.top / 8;
         this.canvas.style.position = 'absolute';
         this.canvas.style.zIndex = '6';
         this.canvas.setAttribute("id", "charCanvas");
